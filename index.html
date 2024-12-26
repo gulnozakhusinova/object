@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список автомобилей</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+    .car-list {
+      margin-top: 20px;
+    }
+    .car-card {
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Добавить автомобиль</h1>
+    <div class="form-group">
+      <label for="car-name">Название автомобиля</label>
+      <input type="text" id="car-name" placeholder="Название автомобиля">
+    </div>
+    <div class="form-group">
+      <label for="car-model">Модель</label>
+      <input type="text" id="car-model" placeholder="Модель автомобиля">
+    </div>
+    <div class="form-group">
+      <label for="car-year">Год выпуска</label>
+      <input type="number" id="car-year" placeholder="Год выпуска">
+    </div>
+    <div class="form-group">
+      <label for="car-price">Цена</label>
+      <input type="number" id="car-price" placeholder="Цена автомобиля">
+    </div>
+    <div class="form-group">
+      <label for="car-position">Позиция</label>
+      <input type="text" id="car-position" placeholder="Позиция">
+    </div>
+    <button class="button" id="add-car-btn">Добавить в список</button>
+
+    <div class="car-list" id="car-list"></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
